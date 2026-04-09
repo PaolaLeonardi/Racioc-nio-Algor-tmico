@@ -34,3 +34,14 @@ for i in range (1, N+1):
     else:
         marca += "+" + str(i)
 print (f"{marca} = {total}")
+
+print ("Exercício 03)
+
+n1 = int (input ("Diga um número inicial:\n> "))
+n2 = int (input ("Diga um número final:\n> "))
+
+for i in range(n1, n2 + 1):
+    print(f"\nTabuada do {i}:")
+
+    for j in range(1, 11):
+        print(f"{i} x {j} = {i * j}")
