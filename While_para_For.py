@@ -45,10 +45,11 @@ else:
     for letra in palavra:
         print(letra)
 
-print ("Exercício 01")
+print ("Atividade 03")
 
 for linha in range (3):
     for coluna in range (4):
         print ("*", end = " ") # (E)ND, não o (A)ND
     print ()
         print (i)
+# Ele prioriza o FOR de dentro primeiro se tiver dois IN
