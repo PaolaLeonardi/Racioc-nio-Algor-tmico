@@ -30,7 +30,7 @@ for i in range (1, N+1):
     total += i
 
     if i == 1:
-        espaco += str(i) #Trasnformo p/ string
+        espaco += str(i) #Transformo p/ string
     else:
         espaco += "+" + str(i)
 print (f"{espaco} = {total}")
