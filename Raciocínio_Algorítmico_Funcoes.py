@@ -48,3 +48,6 @@
 
 #5 - Escreva uma função chamada "inverter" que receba uma string
 #como parâmetro e imprime a string invertida.
+
+#6- Escreva uma função chamada "imprime_diagonal" que recebe uma matriz de tamanho
+#3x3 preenchida com valores quaisquer, e imprime os valores na diagonal principal.
