@@ -139,51 +139,59 @@ print(contar_caracteres(texto, caractere))
 #• O programa deve repetir o menu após cada operação, até que
 #o usuário escolha a opção de sai
 
-def soma(a, b):
-    return a + b
+x = 0
+y = 0
 
-def subtracao(a, b):
-    return a - b
+def somar(x,y):
+    return x + y
 
-def multiplicacao(a, b):
-    return a * b
+def subtrair(x,y):
+    return x - y
 
-def divisao(a, b):
-    if b == 0:
-        return "Não é possível dividir por zero."
-    return a / b
+def multiplicar(x,y):
+    return x * y
+
+def dividir(x,y):
+    if y == 0:
+        return "Erro: divisão por zero!"
+    else:
+        return x / y
 
 def menu():
     print("\n=== CALCULADORA ===")
-    print("1 - Soma")
-    print("2 - Subtração")
-    print("3 - Multiplicação")
-    print("4 - Divisão")
+    print("1 - Somar")
+    print("2 - Subtrair")
+    print("3 - Multiplicar")
+    print("4 - Dividir")
     print("5 - Sair")
 
 while True:
+
     menu()
 
-    opcao = input("Escolha uma opção: ")
+    opcao = str(input("Selecione uma opção: ").lower())
 
     if opcao == "5":
-        print("Programa encerrado.")
+        print("Encerrando a calculadora...")
         break
 
-    num1 = float(input("Digite o primeiro número: "))
-    num2 = float(input("Digite o segundo número: "))
+    x = int(input("Qual o primeiro número: "))
+    y = int(input("Qual o segundo número: "))
 
-    if opcao == "1":
-        print("Resultado:", soma(num1, num2))
+    if opcao == "somar":
+        resultado = somar(x, y)
 
-    elif opcao == "2":
-        print("Resultado:", subtracao(num1, num2))
+    elif opcao == "subtrair":
+        resultado = subtrair(x, y)
 
-    elif opcao == "3":
-        print("Resultado:", multiplicacao(num1, num2))
+    elif opcao == "multiplicar":
+        resultado = multiplicar(x, y)
 
-    elif opcao == "4":
-        print("Resultado:", divisao(num1, num2))
+    elif opcao == "dividir":
+        resultado = dividir(x, y)
 
     else:
-        print("Opção inválida.")
+        print("Opção invalida")
+        continue
+
+    print(f"Você escolheu {opcao}, sua resposta é: {resultado}")
