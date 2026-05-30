@@ -5,9 +5,18 @@
 #A[0], A[1] e A[5] do vetor e mostre na tela esta soma.
 #(c) Modifique o vetor na posicao 4, atribuindo a esta posicao o valor 100.
 #d) Mostre na tela cada valor do vetor A, um em cada linha.
-
 A = [1,0,5,-2,-5,7]
 soma = A[0]+A[1]+A[5]
 print (soma)
 A[4] = 100
 print (A)
+
+#Crie um programa que le 6 valores inteiros e, em seguida, mostre na tela os valores lidos:
+valores=[]
+
+print ("Diga 6 valores inteiros:")
+
+for i in range (0,6):
+    valor = (int(input("Valor:\n>")))
+    valores.append(valor)
+print (valores)
